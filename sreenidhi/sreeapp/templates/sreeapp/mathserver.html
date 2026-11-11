@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>web</title>
+    </head>
+    <body>
+        <h1 align="center">CHURN RATE CALCULATION</h1>
+        <h2 align="center" >sreenidhi(26013042)</h2>
+        <form method="post">
+            {%csrf_token%}
+            <label>initialcustomer:</label>
+            <input type ="number" value="{{initial_customer}}" name="initialcustomer"><br><br>
+            <label>presentcustomer:</label>
+            <input type="number" value="{{present_customer}}" name="presentcustomer"><br><br>
+            <input type="submit" value="Calculate"><br><br>
+            <label>churnrate:</label>
+            <input type="number" value="{{churn}}"><br><br>
+        </form>
+    </body>
+</html>
